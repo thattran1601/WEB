@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+<head>
+    <title>Page 2</title>
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.1/css/buttons.dataTables.min.css">
+</head>
+
+<body>
+
+<h3>Page 2 - Export + Language</h3>
+
+<table id="table2"></table>
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
+<script src="https://cdn.datatables.net/buttons/2.4.1/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.html5.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.print.min.js"></script>
+
+<script>
+$(document).ready(function () {
+    $('#table2').DataTable({
+        ajax: {
+            url: '/api/user',
+            dataSrc: 'data'
+        },
+
+        dom: 'Bfrtip',
+        buttons: ['excel', 'pdf', 'print'],
+
+        language: {
+            search: "Tìm kiếm:",
+            lengthMenu: "Hiển thị _MENU_ dòng",
+            info: "Hiển thị _START_ đến _END_ của _TOTAL_ dòng"
+        },
+
+        columns: [
+            { data: 'id', title: 'ID' },
+            { data: 'name', title: 'Name' },
+            { data: 'email', title: 'Email' },
+            { data: 'phone', title: 'Phone' },
+            { data: 'class', title: 'Class' }
+        ]
+    });
+});
+</script>
+
+</body>
+</html>

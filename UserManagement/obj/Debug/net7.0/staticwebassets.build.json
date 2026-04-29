@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "Hash": "bVKps7kFuBHg3G5smSsaPLVmovgy/WoMixwjcfAeSTw=",
+  "Source": "UserManagement",
+  "BasePath": "_content/UserManagement",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "UserManagement\\wwwroot",
+      "Source": "UserManagement",
+      "ContentRoot": "D:\\WEB\\UserManagement\\wwwroot\\",
+      "BasePath": "_content/UserManagement",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\WEB\\UserManagement\\wwwroot\\index.html",
+      "SourceId": "UserManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WEB\\UserManagement\\wwwroot\\",
+      "BasePath": "_content/UserManagement",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "D:\\WEB\\UserManagement\\wwwroot\\page1.html",
+      "SourceId": "UserManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WEB\\UserManagement\\wwwroot\\",
+      "BasePath": "_content/UserManagement",
+      "RelativePath": "page1.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\page1.html"
+    },
+    {
+      "Identity": "D:\\WEB\\UserManagement\\wwwroot\\page2.html",
+      "SourceId": "UserManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WEB\\UserManagement\\wwwroot\\",
+      "BasePath": "_content/UserManagement",
+      "RelativePath": "page2.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\page2.html"
+    },
+    {
+      "Identity": "D:\\WEB\\UserManagement\\wwwroot\\page3.html",
+      "SourceId": "UserManagement",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WEB\\UserManagement\\wwwroot\\",
+      "BasePath": "_content/UserManagement",
+      "RelativePath": "page3.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\page3.html"
+    }
+  ]
+}

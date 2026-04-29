@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+<head>
+    <title>Page 1</title>
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+</head>
+
+<body>
+
+<h3>Page 1 </h3>
+
+<table id="table1" border="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Class</th>
+        </tr>
+    </thead>
+    <tbody id="data-body">
+        <!-- data sẽ đổ vào đây -->
+    </tbody>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
+<script>
+// 🔥 load data từ API
+fetch('/api/user')
+.then(res => res.json())
+.then(res => {
+    let html = "";
+
+    res.data.forEach(u => {
+        html += `
+            <tr>
+                <td>${u.id}</td>
+                <td>${u.name}</td>
+                <td>${u.email}</td>
+                <td>${u.phone}</td>
+                <td>${u.class}</td>
+            </tr>
+        `;
+    });
+
+    document.getElementById("data-body").innerHTML = html;
+
+    // 👉 KHÔNG config gì thêm
+    $('#table1').DataTable();
+});
+</script>
+
+</body>
+</html>
